@@ -1,0 +1,38 @@
+{
+  "name": "tcc_g5",
+  "version": "1.0.0",
+  "description": "TCC G5 - Aplicativo de denuncias",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiogsetec/tcc_g5.git"
+  },
+  "keywords": [
+    "Denuncia",
+    "tcc",
+    "usuario",
+    "agenda",
+    "equipes",
+    "anexo"
+  ],
+  "author": "Caio - Gabryell - Leonardo - Pedro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caiogsetec/tcc_g5/issues"
+  },
+  "homepage": "https://github.com/caiogsetec/tcc_g5#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+   
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
