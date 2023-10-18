@@ -4,7 +4,11 @@ const db = require('../database/connection');
 module.exports = {
     async listarAgendaDenuncias(request, response) {
         try {
-            return response.status(200).json({confirma: 'Listar Agenda Denuncias'});
+            const sql = 'SELECT agd_id, den_id, eqp_id, agd_instrucoes, agd_data, adg_periodo, agd_relatorio FROM agenda_denuncias;'
+           
+            const usuarios = await db.query(sql);
+
+            return response.status(200).json({confirma: AgendaDenuncias[0]});
         } catch (error) {
             return response.status(500).json({confirma: 'Erro', message: error});
         }
