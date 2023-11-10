@@ -4,7 +4,7 @@ const db = require('../database/connection');
 module.exports = {
     async listarUsuarios(request, response) {
         try {
-            const sql = 'SELECT usu_id, usu_nome, usu_email, usu_senha, usu_cpf, usu_telefone, usu_aceite_termos, usu_aceite_politicas, usu_funcionario FROM usuarios WHERE usu_ativo = 1;';
+            const sql = 'SELECT usu_id, usu_nome, usu_email, usu_senha, usu_cpf, usu_telefone, usu_aceite_termos, usu_aceite_politicas, usu_funcionario FROM usuarios;';
             
             const usuarios = await db.query(sql);
 
