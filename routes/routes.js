@@ -36,8 +36,8 @@ router.delete('/equipes', equipesController.apagarEquipes);
 
 router.get('/usuarios', usuariosController.listarUsuarios);
 router.post('/usuarios', usuariosController.cadastrarUsuarios);
-router.patch('/usuarios', usuariosController.editarUsuarios);
-router.delete('/usuarios', usuariosController.apagarUsuarios);
+router.patch('/usuarios/:usu_id', usuariosController.editarUsuarios);
+router.delete('/usuarios/:usu_id', usuariosController.apagarUsuarios);
 //post
 //patch
 //delete
